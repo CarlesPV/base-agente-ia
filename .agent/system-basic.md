@@ -4,23 +4,24 @@ El proyecto debe seguir esta estructura de carpetas como punto inicial:
 /
 ├── .agent/
 │   ├── system-prompt.md        # Especifica el rol, objetivos y metodología de trabajo del agente.
-│   ├── roadmap.md              # Define las fases, tareas pendientes y el estado actual del proyecto.
+│   ├── roadmap.md              # Define las fases, tareas pendientes y el estado actual.
 │   ├── system-basic.md         # Restricciones y comportamientos básicos inquebrantables.
-│   ├── memory.md               # Registro a largo plazo de aprendizajes, resoluciones de bugs y configuraciones específicas.
-│   ├── conventions.md          # Especifica la pila tecnológica exacta y convenciones del proyecto.
-│   └── templates/              # Esquemas de archivos roadmap, history, etc
+│   ├── memory.md               # Registro a corto plazo de aprendizajes, resoluciones de bugs.
+│   ├── archive/                # Historial de memoria purgada para ahorrar tokens (ej. memory-archive.md).
+│   ├── conventions/            # Reglas específicas por tecnología (ej. react.md, python.md).
+│   └── templates/              # Esquemas base (prompt-template.md, roadmap-template.md, etc).
 ├── .github/                    # (Opcional) Flujos de trabajo de CI/CD automatizados.
 ├── docs/
 │   ├── documentation/          # Explicación técnica de módulos, APIs y arquitectura.
 │   ├── requirements/           # Requisitos funcionales y no funcionales del proyecto.
-│   └── history/                # Historial de versiones y decisiones arquitectónicas mayores (ADRs).
+│   └── history/                # Historial de versiones y decisiones arquitectónicas (ADRs).
 ├── src/                        # Código fuente principal de la aplicación.
 ├── tests/                      # Batería de pruebas automatizadas.
 ├── .env                        # Variables de entorno seguras.
-├── .env.example                # Plantilla de variables de entorno para referencia y configuración local.
-├── .agentignore                # Archivos y carpetas invisibles para el agente.
-├── .gitignore                  # Archivos y carpetas excluidos del control de versiones.
-└── README.md                   # Punto de entrada con objetivos, instalación y uso.
+├── .env.example                # Plantilla de variables de entorno.
+├── .agentignore                # Archivos invisibles para el agente.
+├── .gitignore                  # Archivos excluidos del control de versiones.
+└── README.md                   # Punto de entrada con objetivos e instalación.
 ```
 ## Normativas básicas
 El agente deberá cumplir estas directrices de forma estricta en cada interacción:

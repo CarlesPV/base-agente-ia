@@ -1,3 +1,8 @@
+# --- Archivos de Contexto Histórico y Documentación Densa ---
+.agent/archive/
+docs/history/
+docs/requirements/
+
 # --- Dependencias y Entornos (PESADOS) ---
 node_modules/
 bower_components/
@@ -11,7 +16,7 @@ env/
 *.dll
 *.so
 
-# --- Carpetas de Compilación (BASURA DE TOKENS) ---
+# --- Carpetas de Compilación y Caché ---
 dist/
 build/
 out/
@@ -23,6 +28,7 @@ package-lock.json
 pnpm-lock.yaml
 yarn.lock
 composer.lock
+Pipfile.lock
 
 # --- Archivos de Configuración Sensible (SEGURIDAD) ---
 .env
@@ -34,7 +40,7 @@ composer.lock
 certs/
 secrets/
 
-# --- Multimedia y Assets (EL AGENTE NO LOS VE) ---
+# --- Multimedia y Assets ---
 *.png
 *.jpg
 *.jpeg
